@@ -6,12 +6,12 @@ using TMPro;
 
 public class player_controller : MonoBehaviour {
 
-    public float speed;
+    public float speed = 0;
     public TextMeshProUGUI CountText;
     public GameObject winTextObject;
-    private float movementX;
-    private float movementY;
-    private Rigidbody rb;
+    public float movementX;
+    public float movementY;
+    public Rigidbody rb;
     private int count;
 
     void Start() {
@@ -21,15 +21,15 @@ public class player_controller : MonoBehaviour {
         winTextObject.SetActive(false);
     }
 
-    void FixedUpdate() {
-        Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
-        rb.AddForce (movement * speed);
-    }
-
     void OnMove(InputValue value) {
         Vector2 v = value.Get<Vector2>();  
         movementX = v.x;
     	movementY = v.y;
+    }
+
+    void FixedUpdate() {
+        Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
+        rb.AddForce (movement * speed);
     }
 
     void OnTriggerEnter(Collider other) {

@@ -1077,9 +1077,11 @@ m_ResolvedPackages:
     - 2.1.6
     - 2.1.7
     - 2.1.8
+    - 2.1.9
     compatible:
     - 2.1.8
-    verified: 2.1.8
+    - 2.1.9
+    verified: 2.1.9
   dependencies:
   - name: com.unity.modules.vr
     version: 1.0.0
@@ -2952,6 +2954,7 @@ m_ResolvedPackages:
     - 1.1.0-pre.11
     - 1.1.0-pre.41
     - 1.1.0-pre.69
+    - 1.2.0
     compatible:
     - 1.0.1
     - 1.1.0-pre.7
@@ -2961,6 +2964,7 @@ m_ResolvedPackages:
     - 1.1.0-pre.11
     - 1.1.0-pre.41
     - 1.1.0-pre.69
+    - 1.2.0
     verified: 1.0.1
   dependencies:
   - name: com.unity.modules.unitywebrequest

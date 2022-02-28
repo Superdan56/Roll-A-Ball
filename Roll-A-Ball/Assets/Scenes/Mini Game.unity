@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 109515014}
   - component: {fileID: 109515013}
   - component: {fileID: 109515012}
+  - component: {fileID: 109515019}
   - component: {fileID: 109515018}
   m_Layer: 0
   m_Name: Player
@@ -231,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109515011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,9 +251,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27e350bbf3ce5a43bf6af3f148f8761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 10
   CountText: {fileID: 533694055}
   winTextObject: {fileID: 1699299825}
+  movementX: 0
+  movementY: 0
+  rb: {fileID: 0}
+--- !u!114 &109515019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109515011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: f3eb54e81067ae943b19efd0d1b7c66a, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!4 &114394733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4522275884409062087, guid: b486beb4e8bd3324a918cf58fac20161, type: 3}
