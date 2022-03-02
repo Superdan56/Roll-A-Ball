@@ -355,6 +355,11 @@ MonoBehaviour:
   movementX: 0
   movementY: 0
   rb: {fileID: 0}
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  jumpForce: 4
+  col: {fileID: 0}
 --- !u!114 &109515019
 MonoBehaviour:
   m_ObjectHideFlags: 0
