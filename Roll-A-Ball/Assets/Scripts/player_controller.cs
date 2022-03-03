@@ -41,6 +41,10 @@ public class player_controller : MonoBehaviour {
         if (other.gameObject.CompareTag("Ground")) {
             isGrounded = true;
         }
+
+        if (other.gameObject.CompareTag("PickUp")) {
+            winTextObject.SetActive(true);
+        }
     }
 
     void OnCollisionExit(Collision other) {
